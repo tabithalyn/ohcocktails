@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<head>
+<title>IBA Cocktails</title>
+<link rel="shortcut icon" href="favicon.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+
+  <h1>IBA Cocktails</h1>
+  <!-- https://en.wikipedia.org/wiki/List_of_IBA_official_cocktails -->
+
+<div class="filtering">
+  <div id="filters">
+    <div class="ui-group">
+      <h3>Category</h3>
+      <div class="button-group js-radio-button-group" data-filter-group="category">
+        <button class="button is-checked" data-filter="">All</button>
+        <button class="button" data-filter=".unforgettable">The Unforgettables</button>
+        <button class="button" data-filter=".classic">Contemporary Classics</button>
+        <button class="button" data-filter=".new">New Era</button>
+      </div>
+    </div>
+
+    <div class="ui-group">
+      <h3>Spirit</h3>
+      <div class="button-group js-radio-button-group" data-filter-group="spirit">
+        <button class="button is-checked" data-filter="">All</button>
+        <button class="button" data-filter=".gin">Gin</button>
+        <button class="button" data-filter=".vodka">Vodka</button>
+        <button class="button" data-filter=".whisky">Whisky</button>
+      </div>
+    </div>
+
+    <div class="ui-group">
+      <h3>Glassware</h3>
+      <div class="button-group js-radio-button-group" data-filter-group="glassware">
+        <button class="button is-checked" data-filter="">All</button>
+        <button class="button" data-filter=".glass1">Glass1</button>
+      </div>
+    </div>
+
+    <div class="ui-group">
+      <h3>Fruit</h3>
+      <div class="button-group js-radio-button-group" data-filter-group="fruit">
+        <button class="button is-checked" data-filter="">All</button>
+        <button class="button" data-filter=".cherry">cherry</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  <div class="grid">
+    <div class="cocktail unforgettable vodka">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <h3 class="name">Cocktail</h3>
+      <a class="more">Read more</a>
+    </div>
+    <div class="cocktail unforgettable gin">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail unforgettable gin">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail new vodka">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail new vodka">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail new gin">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail classic gin">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail classic vodka">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail unforgettable vodka gin">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail unforgettable gin">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail classic vodka">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail new gin vodka">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+    <div class="cocktail new gin">
+      <div class="like"><i onclick="like(this)" class="far fa-heart"></i></div>
+      <p class="name">Cocktail</p>
+      <p class="more">Read more</p>
+    </div>
+  </div>
+  
+
+<script src="main.js"></script>
+</body>
+</html>
