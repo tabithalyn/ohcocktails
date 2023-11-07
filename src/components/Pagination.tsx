@@ -17,7 +17,7 @@ const Pagination = ({
   }
 
   return (
-    <div className="w-full h-[20vh] bg-stone-100 flex flex-wrap justify-center items-center">
+    <div className="w-full h-[12vh] bg-stone-100 flex flex-wrap justify-center items-center">
       <ul className="flex flex-wrap justify-center items-center p-5 w-full">
         {pages.map((page:number, index:number) => (
           <li key={index}>
@@ -26,7 +26,7 @@ const Pagination = ({
                 setCurrentPage(page);
                 window.scrollTo({ top: 0, behavior: "smooth" });
               }}
-              className={page === currentPage ? "bg-stone-400 py-3 px-4 mx-1" : "py-3 px-4 mx-1 hover:bg-stone-500 hover:cursor-pointer transition-all"}
+              className={page === currentPage ? "bg-stone-400 px-4 py-2.5 mx-1 rounded-full" : "px-4 py-2.5 mx-1 hover:bg-stone-500 hover:cursor-pointer transition-all rounded-full"}
             >
               {page}
             </button>

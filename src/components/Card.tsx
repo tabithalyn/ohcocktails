@@ -1,7 +1,9 @@
+import Images from "./Images";
 
 export type CocktailType = {
   name: string;
   ingredients: string[];
+  image: string;
   standard_drinkware: string[];
   method: string;
   category: string;
@@ -11,25 +13,27 @@ export type CocktailType = {
 const Card = ({
   name, ingredients, standard_drinkware, method, category, served
 }:CocktailType) => {
+
+
   return (
     <>
     <div
-      className="md:w-1/4 sm:w-1/3 m-3 flex justify-center flex-wrap bg-slate-100 p-2"
+      className="md:w-1/4 sm:w-1/3 m-3 flex justify-center items-start flex-wrap p-2 rounded-xl bg-gradient-to-br from-stone-300 to-stone-500"
     >
-      <h1 className="w-full bg-stone-200 h-7 text-xl text-center font-montserrat font-light">{name}</h1>
-      <div className="w-full flex justify-center items-center h-1/4">
-        <img src="src/assets/cocktails/cocktail-1.png" alt={name} className="h-full flex overflow-hidden" />
+      <h1 className="w-full text-xl text-center font-montserrat font-light pt-1">{name}</h1>
+      <div className="w-full h-1/3 flex justify-center items-center">
+        <Images cocktail={name} />
       </div>
-      <div className="bg-orange-100 w-full text-sm">{served}</div>
-      <div className="bg-neutral-200 w-full">
+      <div className="w-full text-sm p-2 italic rounded-lg bg-stone-200 font-light">{served}</div>
+      <div className="bg-stone-100 w-full px-2 py-0 rounded-lg">
         {ingredients.map((ingredient, id) => (
-          <ul key={id}>
-            <li>{ingredient}</li>
+          <ul key={id} className="list-inside list-disc">
+            <li className="py-1">{ingredient}</li>
           </ul>
         ))}
       </div>
-      <div className="bg-stone-300 w-full">{method}</div>
-      <div className="bg-gray-200 w-full p-2 flex items-center justify-between">
+      <div className="bg-stone-300 w-full p-3 rounded-lg">{method}</div>
+      <div className="w-full p-2 flex rounded-lg items-center justify-between">
         <img
           src={standard_drinkware[1]}
           className={
@@ -42,7 +46,7 @@ const Card = ({
             ? "w-1/12 float-left" : "w-1/6 float-left"
           }
         />
-        <div className="bg-amber-100 h-full flex items-center px-5">{category}</div>
+        <div className="bg-stone-400 h-full flex items-center px-5 rounded-lg font-montserrat">{category}</div>
       </div>
     </div>
     </>
