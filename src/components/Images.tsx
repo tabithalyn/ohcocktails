@@ -12,7 +12,8 @@ const Images = ({cocktail}:{cocktail:string}) => {
 
     const options = {
       headers: {
-        'X-RapidAPI-Key': '939263af12mshd4f09c5a13c5c11p101b2fjsn8cc2636ac7d3',
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+        'X-RapidAPI-Key': import.meta.env.VITE_API_KEY,
         'X-RapidAPI-Host': 'the-cocktail-db.p.rapidapi.com'
       }
     }
